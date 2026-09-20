@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OdluciZaMene</title> 
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="aplikacija">
+
+        <header class="zaglavlje">
+
+            <p class="slogan">
+                Ne možeš odlučiti? Neka ti aplikacija pomogne 
+            </p>
+        </header>
+
+        <main class="glavni-sadrzaj">
+
+            <section class="uvod">
+                <h1>OdlučiZaMene </h1>
+
+                <p>
+                    Dodaj svoje opcije, podesi njihove šanse 
+                    i dopusti aplikaciji da odluči umjesto tebe. 
+                </p>
+            </section>
+
+            <section class="kartica"> 
+
+                <div class="zaglavlje-kartice">
+                    <div>
+                        <h2>Tvoje opcije</h2>
+                        <p>Dodaj najmanje dvije opcije.</p>
+                    </div>
+
+                    <span class="broj-opcija">Broj opcija: 
+                        <span id="brojOpcija">0</span>
+                    </span>
+                </div>
+
+                <div id="listaOpcija" class="lista-opcija"></div>
+
+                <div class="dodavanje-opcije">
+
+                    <input
+                        type="text"
+                        id="unosOpcije"
+                        placeholder="npr. Ćevapi"
+                        maxlength="40"
+                    >
+
+                    <button id="dugmeDodaj" class="dugme-dodaj">
+                        + Dodaj 
+                    </button>
+
+                </div>
+
+            </section>
+
+            <section class="kartica kartica-tezina">
+
+                <div class="zaglavlje-kartice">
+                    <div>
+                        <h2>Težina odluke</h2>
+                        <p>
+                            Podesi koliko svaka opcija treba imati šanse.
+                        </p>
+                    </div>
+
+                    <span id="ukupnaTezina" class="ukupna-tezina">
+                        0% 
+                    </span>
+                </div>
+
+                <div id="listaTezina" class="lista-tezina"></div>
+
+            </section>
+
+            <section class="radnje">
+
+                <button id="dugmeOdluci" class="dugme-odluci">
+                    ODLUČI ZA MENE 
+                </button>
+
+                <button id="dugmeResetuj" class="dugme-resetuj">
+                    Resetuj
+                </button>
+
+            </section>
+
+            <section id="rezultat" class="rezultat skriven">
+
+                <div class="mali-naslov">
+                    ODLUKA:  
+                </div>
+
+
+                <h2 id="tekstRezultata">
+                    Ćevapi 
+                </h2>
+
+                <button id="dugmePonovo" class="dugme-ponovo">
+                    Odluči ponovo 
+                </button>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script> 
+
+</body>
+</html>
